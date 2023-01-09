@@ -1,0 +1,88 @@
+@import "common.css";
+@font-face {
+    font-family: Play-Day;
+    src: url(../fonts/IBMPlexMono-Bold.ttf);
+    font-weight: 700;
+}
+ 
+.banner {
+    max-height: 500px;
+    overflow: hidden;
+}
+.banner-picture {
+    width: 100%;
+}
+.animation {
+    font-family: Play-Day;
+    font-size: 18px;
+    font-weight: 900;
+    color:green;
+    padding: 15px 0;
+    animation-name: ticker;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+@keyframes ticker{
+    0%{
+        font-size: 18px;
+        /* left: 0; */
+    }
+    50%{
+        /* left: 200px; */
+        font-size: 25px;
+        text-decoration: underline;
+    }
+    100%{
+        /* left: 700px; */
+        font-size: 60px;
+        color:red;
+        
+    }
+}
+.aside-block {
+    min-width: 30%;
+}
+.aside-portrait {
+    width: 100%;
+    padding-top: 15px;
+}
+.aside-text {
+    font-size: 21px;
+    padding-top: 15px;
+}
+.flex-block {
+    display: flex;
+}
+.main {
+    padding: 15px;
+}
+.row {
+    img, div {
+        width: calc(100% / 3 - 30px);
+    }
+}
+.Play-Day-test {
+    font-family: Play-Day;
+}
+
+@media screen and (max-width: 768px) {
+    .aside-block {
+        min-width: 100%;
+    }
+    .main {
+        padding: 15px 0;
+    }
+    .flex-block {
+        display: block;
+    }
+    .row {
+        display: block;
+        img, div {
+            width: 100%;
+        }
+    }
+}

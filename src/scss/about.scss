@@ -1,0 +1,99 @@
+
+.bg-block {
+    background-image: url('../img/Ellipse1.png');
+    background-color: #e8e8e8;
+    
+}
+.h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #273d46;
+    padding-top: 125px;
+}
+.preview-text {
+    color: #273d46;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-bottom: 76px;
+}
+.central-picture {
+    /* background-color: white;
+    width: 841px;
+    box-sizing:border-box;
+    padding: 10px;
+    margin: auto;
+        img {
+            width: 100%;
+        }   
+ */
+ background-color: white;
+ height: 560px;
+ width: 840px;
+ background-image: url('../img/light-man.jpg');
+ background-repeat: no-repeat;
+ border: white solid 10px;
+ box-sizing: border-box;
+ background-position: 50% 50%;
+ background-size: contain;
+ margin: auto;
+box-shadow: 2px 2px 43px -25px; 
+}
+.main-text {
+    color: #273d46;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    line-height: 40px;
+    padding-bottom: 45px;
+}
+.main-paragraph {
+    width: 840px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 76px 45px;
+    li {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 10px;
+        background: url('../img/li.svg') left 6px no-repeat;
+        padding-left: 30px;
+        }
+}
+.first-item {
+    font-weight: 600;
+}
+
+.second-item {
+    color: #80b7b3;
+    font-style: italic;
+}
+
+.third-item {
+    font-weight: 600;
+    text-shadow:2px 3px 6px #80b7b3;
+}
+
+.fourth-item {
+    color: grey;
+    text-decoration: line-through;
+    font-style: italic;
+}
+button {
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    background-color: #80b7b3;
+    border-radius: 20px;
+    border-style: none;
+    padding: 14px;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    box-shadow: -1px 2px 17px grey;
+
+}
+

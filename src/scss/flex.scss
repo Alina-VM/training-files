@@ -1,0 +1,201 @@
+@import "../scss/null.scss";
+$acentcolor: #445162;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {      //Врапер должен быть флексом, чтоб управлять положением футера (как флекс элементом врапера)
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.container {    //Container Ограничивает контентную часть
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.content {
+    flex: 1 1 auto; //Позволяет держать футер всегда внизу. 
+}
+.title {
+    font-size: 30px;
+}
+.top-block {
+    background-color: $acentcolor;
+    padding: 50px 0;
+
+		&__row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+		&__body {
+            color: #fff;
+            padding-right: 30px;
+        }
+
+		&__title {
+            font-size: 60px;
+            margin-bottom: 38px;
+        }
+
+		&__item {
+            background: url(../img/flex/icon/checkicon.png) 0 1px no-repeat;
+            font-size: 20px;
+            padding-left: 36px;
+            line-height: 22px;
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+}
+
+.what {
+    padding: 48px 0;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__img {
+        flex: 0 0 430px;  //Запрет на увеличение и уменьшение блока
+            img {
+                max-width: 100%
+            }
+    }
+
+    &__body {
+        flex: 1 1 auto; 
+        padding-left: 38px;
+    }
+
+    &__title {
+        padding-bottom: 33px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.columns {
+
+    &__title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -8px;
+    }
+
+    &__item {
+        flex: 0 1 50%; //Нельзя увеличиваться, можно уменьшаться, размер 50%
+        display: flex;
+        margin-bottom: 30px;
+        padding: 0 8px;
+        &_name {
+            font-size: 24px;
+            line-height: 30px;
+            padding-bottom: 19px;
+        }
+
+        &_text {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &__img {
+        flex: 0 0 195px;
+        padding-right: 15px;
+    }
+
+}
+
+.cards {
+    padding: 50px 0;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        margin: 0 -20px;
+    }
+
+    &__column {
+        display: flex;
+        flex: 0 1 33.333%; //записать для IE (запрет на увеличение, т.к. иногда он не понимает запись в %)
+        padding: 0 20px;
+    }
+
+    &__item {
+        background-color: $acentcolor;
+        border-radius: 5px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        color: #fff;
+        font-size: 24px;
+        text-align: center;
+        padding: 17px 0;
+    }
+
+    &__sublabel {
+        color: $acentcolor;
+        background-color: #fff;
+        border: 1px solid $acentcolor;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 40px;
+    }
+
+    &__text {
+        color: #fff;
+        padding: 20px;
+        flex: 1 1 auto;
+        
+    }
+
+    &__btn {
+        background-color: #fff;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 5px;
+        margin: 0 20px;
+        text-align: center;
+
+    }
+}
+
+
+
+
+.footer {
+    background-color: #f5f5f5;
+    
+		&__row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65px;
+        }
+		&__text {
+            font-size: 12px;
+            letter-spacing: 0.3px;
+        }
+}

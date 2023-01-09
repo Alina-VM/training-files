@@ -1,0 +1,347 @@
+@import "null.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "scss/fontawesome.scss";
+@import "scss/solid.scss";
+@import "scss/brands.scss";
+
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Light.ttf);
+    font-weight: 300;
+}
+@mixin title-style ($color){
+    font-family: Lato;
+    font-size: 34px;
+    text-transform: uppercase;
+    color: $color;
+    font-weight: 900;
+    text-align: center;
+}
+@mixin button-style ($color) {
+    font-size: 16px;
+    font-family: Lato;
+    text-transform: uppercase;
+    border-color: whitesmoke;
+    padding: 15px 40px;
+    border: 2px solid;
+    background-color: transparent;
+    color: $color;
+}
+.container-fluid {
+    width: 100%;
+}
+.container {
+    width: 1132px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+.top-block {
+    background-image: url("../img/first-display/BG-Header.png");  
+    &__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__logo {
+        padding: 110px 0;
+    }
+}
+.title {
+    @include title-style (#fff);
+}
+.button {
+    @include button-style(white);
+}
+.top-block__button {
+    margin-top: 220px;
+}
+.top-block__subtitle {
+    font-family: Lato;
+    font-size: 26px;
+    color: white;
+    letter-spacing: 2px;
+    padding: 20px;
+    &::after {
+        content: "";
+        background-color: white;
+        height: 3px;
+        width: 106px;
+        display: block;
+        margin: 50px auto;
+    }
+}
+.top-block__arow {
+    margin: 75px;
+    color: white;
+    font-size: 20px;
+}
+.container-wrapper {
+    border-bottom: rgb(215, 213, 213) 1px solid;
+}
+.top-menu {
+   padding: 21px 0; 
+   
+}
+.menu {
+    display: flex;
+    justify-content: center;    
+}
+.menu__item {
+    font-family: Lato;
+    font-size: 15px;
+    margin: 0 25px;
+    text-transform: uppercase;
+}
+.menu__item_active {
+    color: #ada074;
+}
+.about {
+
+    &__title {
+        padding-top: 155px;
+        @include title-style(black);
+        &::after {
+            content: "";
+            background-color: black;
+            height: 1px;
+            width: 106px;
+            display: block;
+            margin: 30px auto;
+        }
+    }
+
+    &__paragraf {
+        font-family: Lato;
+        font-size: 13.94px;
+        line-height: 23px;
+        text-align: center;
+        color: rgb(129, 125, 125); 
+        padding-bottom: 70px;      
+    }
+
+    &__services {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    &__icon {        
+        
+        width: 42px;
+        height: 42px;
+    }
+
+    &__name-service {
+        font-family: Lato;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 23px;
+        text-align: center;
+        color: rgb(129, 125, 125); margin-bottom: 100px;
+    }
+}
+.about-service {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    &_border {
+        border: #d2c9aa  2px solid;
+        padding: 24px;
+        box-sizing: content-box;
+        border-radius: 50%;
+        margin-bottom: 40px;
+    }
+}
+
+.portfolio {
+    background-color: #cac2c2;
+    padding-bottom: 40px;
+		&__title {
+            color: black;
+            padding-top: 100px;
+            &::after {
+                content: "";
+                background-color: black;
+                height: 1px;
+                width: 106px;
+                display: block;
+                margin: 30px auto;
+        }
+    }
+    &__photos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__picture {
+        width: 513px;
+        height: 363px;
+        margin-bottom: 16px;
+        background-color: #ada074;
+    }
+    &__menu {
+        margin-bottom: 48px;
+    }
+}
+.portfolio__button {
+    color: black;
+    margin: 0 auto;
+    display: block;
+}
+
+.partners {
+    background-image: url("../img/partners/BG-partners.jpg");
+
+    &__title {
+        font-family: Lato;
+        font-size: 30px;
+        color: white; 
+        text-align: center;
+        padding: 100px 0;
+
+     }
+
+    &__names {
+        padding-bottom: 100px;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    &__example {
+        padding-right: 115px;
+        object-fit: contain;
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+//contact
+
+.contact {
+    padding-bottom: 100px;
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &_wraper {
+        display: flex;
+        justify-content: center;
+    }
+    &__title {
+        color: black;
+            padding-top: 100px;
+            margin-bottom: 80px;
+            &::after {
+                content: "";
+                background-color: black;
+                height: 1px;
+                width: 106px;
+                display: block;
+                margin: 30px auto;
+        }
+    }
+
+    &__input {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #000;
+        width: 165px;
+        margin-right: 60px;
+
+        &_data {
+            display: flex;
+            margin-bottom: 100px;
+        }
+        &_textarea {
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000 !important;
+            width: 392px;  
+            padding-bottom: 0;
+            margin-right: 60px;
+            margin-bottom: 100px;
+        }
+        &_remove {
+            resize: none;
+        }
+    }
+    &__button {
+        background: transparent;
+        align-self: flex-end;
+        margin-right: 60px; 
+    }
+
+
+    &__support {
+        max-width: 246px;
+    }
+
+    &__text {
+        font-family: Myriad Pro;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 36px;
+    }
+
+    &__name {
+        margin-bottom: 20px;
+    }
+
+    &__smm {
+        margin-bottom: 15px;
+    }
+}
+
+
+//FOOter
+
+.footer {
+    background-color: #3c3c3c;
+    &__logo  {
+        width: 126px;
+        margin-top: 40px;    
+    }
+    
+    &__navigation {
+        margin: 40px 0;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__link {
+        font-family: Lato;
+        font-size: 14px;
+        color: white;
+        margin: 0 14px;
+        text-align: center;
+    }
+    &__copyright {
+        font-family: Lato;
+        font-size: 14px;
+        color: #6c6c6c;
+        text-transform: capitalize;
+        padding-bottom: 40px;
+    }
+}
+
+
+
+
+
+

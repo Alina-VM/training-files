@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* pseudo class  and pseudo element lesson */
+/* transition */
+ul {
+  margin: 50px 20px;
+}
+
+.list-first li, .list-second li {
+  background: url(../img/li.svg) left 10px no-repeat;
+  padding-left: 30px;
+  font-size: 30px;
+}
+
+.list-first li:first-child {
+  text-decoration: line-through;
+}
+
+.list-first li:nth-child(2) {
+  font-weight: 800;
+}
+
+.list-first li:nth-child(3) {
+  font-style: italic;
+}
+
+.list-first li:last-child {
+  text-transform: uppercase;
+}
+
+.list-second li:nth-child(2):hover {
+  color: red;
+}
+
+.button-block {
+  text-align: center;
+}
+
+button {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(77, 164, 164);
+  padding: 15px;
+  box-sizing: border-box;
+  border-style: none;
+  border-radius: 20px;
+  box-shadow: gray 0 0 16px;
+  
+}
+button:hover {
+  background-color: burlywood;
+  color: black;
+  transition-duration: 3s, 5s;
+  transition-property: color, background-color;
+  transition-delay: 0s, 2s;
+}
+button:active {
+  background-color: pink;
+}
+
+.button-block input {
+  margin-top: 20px;
+}
+.button-block input:focus {
+  box-shadow: gray 0 0 16px;
+}
+
+.pseudo-element-test::before {
+  content: "★";
+  margin-right: 5px;
+}
+
+.pseudo-element-test:hover:before {
+  color: aquamarine;
+}
+
+.first-letter::first-letter {
+  font-size: 40px;
+  color: red;
+}
+
+/*# sourceMappingURL=shipping.css.map */

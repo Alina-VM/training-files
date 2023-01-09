@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <title>Contact</title>
+    </head>
+</html>
+<body>
+    <header class="container header"> 
+        <a href="home.html"><img class="logo" src="img/logo.png"></a>       
+        <div class="menu">
+            <ul class="row">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shipping.html">Shipping</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <i class="fa-solid fa-bars burger"></i>
+        </div>
+    </header>
+    <div class="container common-form">
+        <div class="main-title">
+            Main settings
+        </div>
+    <form action="#" method="get">
+        <div>
+            <label class="label-title">Project title <br>
+                <input class="input-field" type="text" placeholder="Enter project title">
+            </label>
+        </div>
+        <div>
+            <label class="label-title">Deadline <br>
+                <input class="input-field" type="date" placeholder="">
+            </label>
+        </div>
+        <div>
+            <label class="label-title">Delivery address <br>
+                <input class="input-field" type="text" placeholder="Enter delivery address">
+            </label>
+        </div>
+        <div>
+            <label class="label-title">Approximate budget <br>
+                <input class="input-field" type="text" placeholder="Enter approximate budget">
+            </label>
+        </div>
+        <div>
+            <label class="label-title">Project comments <br>
+                <textarea rows="" cols="" class="big-field" placeholder="Enter project comments"></textarea>
+            </label>
+        </div>
+    </form>
+    </div>
+    <div class="container common-form">
+        <div class="main-title">
+            Filters
+        </div>
+        <form action="#" method="get">
+            <div>
+                <select name="sort" id="" class="filter-option">
+                    <option value="by rating">Sort by rating</option>
+                    <option value="by price">Sort by price</option>
+                </select>
+            </div>
+            <div>
+                <select name="sort" id="" class="filter-option">
+                    <option value="by country">Send request in my country</option>
+                </select>
+            </div>
+            <div class="geo-title">Near me (geo)
+            </div>
+            <div>
+                <input class="input-field" class="filter-slider" type="range" min="0" max="200" value="100">
+            </div>
+            <div>
+                <div>
+                    <label class="checked-text">
+                        <input checked type="checkbox" name="check" value="Verified">Verified
+                    </label>
+                </div>
+                <div>
+                    <label class="checked-text">
+                        <input type="checkbox" name="check" value="One more filter">One more filter
+                    </label>
+                </div>                
+            </div>
+            <div class="checked-choise">You selected: <b>David_33, NickName, RandomStudio</b></div>
+            <button class="button">
+                Send to selected workers 
+            </button>
+        </form>
+    </div>
+
+    
+</body>

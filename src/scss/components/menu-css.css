@@ -1,0 +1,48 @@
+@charset "UTF-8";
+.header {
+  display: flex;
+  background-color: aquamarine;
+}
+
+.logo {
+  width: 101.25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.burger {
+  display: none;
+}
+
+.menu {
+  padding: 15px;
+  background-color: aquamarine;
+  flex-grow: 1;
+  align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .menu ul {
+    display: none;
+  }
+  .burger {
+    display: inline-block;
+    font-size: 40px;
+  }
+  .menu::after {
+    content: "✰";
+    font-size: 40px;
+    display: inline-block;
+    position: absolute;
+    right: 23px;
+    top: 5px;
+  }
+  .logo {
+    margin: auto;
+    display: block;
+    width: 101.25px;
+    position: absolute;
+    left: calc(50% - 50.625px);
+    top: -10px;
+  }
+}/*# sourceMappingURL=menu-css.css.map */

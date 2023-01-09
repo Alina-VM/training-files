@@ -1,0 +1,119 @@
+@import "common.scss";
+%transition {
+    transition: all 0.8s ease 0.1s;
+}
+.first-block {
+    margin-bottom: 25px;
+    img {
+        max-width: 100%;
+    }
+}
+ 
+.second-block__row {
+    display: flex;
+    flex-direction: column;
+}
+.second-block__flex {
+    display: flex;
+}
+.second-block__img {
+    padding-bottom: 58%;
+    overflow: hidden;
+    position: relative;
+}
+.second-block {
+    margin-bottom: 25px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.third-block__flex {
+    display: flex;
+    flex-direction: column;
+}
+.third-block__row {
+    display: flex;
+}
+.third-block__img {
+    flex: 0 0 33.333%;
+    position: relative;
+    min-height: 150px;
+}
+.third-block__text {
+    flex: 1 1 auto;
+}
+.third-block {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.transformation {
+    margin: 40px 0;
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+}
+.transform-example {
+    margin-right: 30px;
+}
+.translate-example__img {
+    img {
+        transform: translate(0px, 0px);
+        @extend %transition;
+            &:hover {
+                transform: translate(10px, 20px);
+            }
+    }
+}
+.scale-example__img {
+    img {
+        @extend %transition;
+            &:hover {
+                transform: scale(-1, 1);
+            }
+    }
+}
+.rotate-example__img {
+    img {
+        @extend %transition;
+            &:hover {
+                transform: rotate(360deg);
+                transform-origin: right;
+            }
+    }
+}
+.skew-example__img {
+    img {
+        @extend %transition;
+            &:hover {
+                transform: skew(-20deg, 20deg);
+            }
+    }
+}
+.matrix-example__img {
+    img {
+        @extend %transition;
+            &:hover {
+                transform: matrix(2, 1, 3, 2, 30, 30);
+            }
+    }
+}
+.perspective-example__img {
+    perspective-origin: center;
+    perspective: 400px;
+    background-color: gray;
+        img {
+            transform: rotateX(45deg);
+        }
+        
+}

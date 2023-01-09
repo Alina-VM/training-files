@@ -1,0 +1,94 @@
+@import "common.scss";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+$red: #D23D20;
+$grey: #F0F0F0;
+%big-letters {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37.92px;
+    padding-bottom: 30px;
+}
+%small-letters {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.59px;
+    padding-left: 19px;
+}
+%form-borders {
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 447px;
+    min-height: 56px;
+    border-width: 1px;
+    border-color: $grey;
+    border-style: solid;
+    margin-top: 10px;
+    margin-bottom: 23px;
+    @media screen and (max-width: 480px){
+        width: 100%;    
+    }
+}
+.common-form {
+    margin-top: 20px;
+}
+.main-title {
+    @extend %big-letters;
+}
+.label-title, .geo-title {
+    @extend %small-letters;
+}
+.input-field, textarea, select {
+    @extend %form-borders;
+        &[placeholder] {
+        font-family: Rubik;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18.96px;
+        padding-left: 19px;
+
+    }
+}
+.big-field {
+    min-height: 140px;
+    padding-top: 19px;   
+}
+.filter-option {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.96px;
+    padding-left: 19px;
+}
+.filter-slider {
+    color: $red;
+}
+[type="checkbox"] {
+    background-color: $red;
+    width: 26px;
+    height: 26px;
+    margin-right: 19px;
+}
+.checked-text {
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+        
+}
+.button {
+    background-color: $red;
+    height: 56px;
+    width: 447px;
+    border: none;
+    margin-top: 22px;
+    margin-bottom: 40px;
+    color: #F0F0F0;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: 400;
+    @media screen and (max-width: 480px){
+        width: 100%;
+    }
+}
