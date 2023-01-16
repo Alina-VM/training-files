@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    background-color: #333;
+    color: white;
+    font-family: Roboto;
+
+}
+.wrapper {
+    min-height: 100%;
+    overflow:hidden;
+}
+.home {
+    color:beige;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3.125rem;
+    margin-bottom: 25px;
+}
+.example {
+    padding: 80px 0;
+
+		&__container {
+            padding: 0 15px;
+            margin: 0 auto;
+            // ширина контейнера в REM: ширина по макету(1020+30) / 16 (размер шрифта по умолчанию)
+            max-width: 65.625rem;
+            position: relative;
+            &::before {
+                content: "" ;
+                background: url('../img/decor.svg') 0 0 / 100% no-repeat;
+                position: absolute;
+                right: 0;
+                //ширина картинки в %: ширина картинки по макету 153/ширину родителя 1050 * 100
+                width: 14.57%;
+                padding-top: 22.95%;
+                top: 50%;
+                transform: translate(50%, -50%);
+            }
+        }
+
+		&__header {
+            margin-bottom: 25px;
+            max-width: 46.875rem;
+        }
+
+		&__sub-title {
+            color: rgb(169, 111, 169);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.875rem; // 14(по макету) /16(по дефолту)
+            line-height: 1.7; // 24(по макету) /14(размер шрифта по макету)
+            margin-bottom: 1.07em; // 15(по макету) /14(по макету)
+        }
+
+		&__title {
+            color: rgb(54, 138, 54);
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 2.625rem;
+            line-height: 1.19;
+            margin-bottom: 0.38em;
+            letter-spacing: 0.12em;
+
+        }
+
+		&__text {
+            line-height: 1.5;
+        }
+
+		&__item {}
+}
+.examples {
+
+		&__items {
+            display: flex;
+        }
+}
+.item-example {
+    display: flex;
+    column-gap: 23px;
+
+		&__icon {
+            flex: 0 0 63px;
+        }
+
+		&__body {}
+
+		&__title {}
+
+		&__text {}
+}
