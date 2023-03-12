@@ -21,7 +21,7 @@
   padding: 15px 0;
   animation-name: ticker;
   animation-duration: 10s;
-  animation-iteration-count: 0;
+  animation-iteration-count: 1;
   animation-timing-function: linear;
 }
 .animation:hover {
@@ -51,6 +51,10 @@
 .aside-portrait {
   width: 100%;
   padding-top: 15px;
+}
+
+.cssunits-card {
+  width: 100%;
 }
 
 .aside-text {
